@@ -1,0 +1,55 @@
+Domain 4 – Question 4.2 (Bias in measurement of the outcome)
+------------------------------------------------------------
+
+Prompt:
+You are evaluating Risk of Bias Domain 4:
+“Bias in measurement of the outcome.”
+
+This is Question 4.2:
+“Could measurement or ascertainment of the outcome have differed between intervention groups?”
+
+Read the provided document.
+
+Your tasks:
+
+1. Determine whether the procedures used to measure or ascertain outcomes were
+   implemented differently across intervention groups.
+
+   Differences may occur if:
+     - different measurement instruments were used in each group,
+     - outcome assessors collected data differently in each arm,
+     - timing of measurement differed between groups,
+     - follow-up schedules or assessment procedures were unequal,
+     - different sources of information were used (e.g., medical records vs. self-report),
+     - certain groups received additional diagnostic tests.
+
+2. The measurement approach is considered equivalent when:
+     - identical procedures and tools were used across groups,
+     - timing and frequency of assessments were the same,
+     - outcome ascertainment relied on objective data unlikely to vary between groups.
+
+3. Consider whether any deviations in outcome ascertainment were:
+     - intentional or unintentional,
+     - likely or unlikely,
+     - explicitly described or implicitly suggested.
+
+4. Return one of the following:
+   Y  = Yes (measurement could differ between groups)
+   PY = Probably Yes
+   NI = No Information
+   PN = Probably No
+   N  = No (measurement unlikely to differ between groups)
+
+5. Provide a short justification explaining why the chosen answer is appropriate.
+
+6. Quote exact sentences or phrases from the document that support your conclusion.
+
+7. If no information is reported about whether measurement methods differed,
+   answer NI.
+
+Output format:
+
+Answer: <Y | PY | NI | PN | N>
+Justification: <2–4 sentences explaining reasoning>
+Quoted Evidence:
+"<exact text copied from the document>"

@@ -1,0 +1,56 @@
+Domain 4 – Question 4.4 (Bias in measurement of the outcome)
+------------------------------------------------------------
+
+Prompt:
+You are evaluating Risk of Bias Domain 4:
+“Bias in measurement of the outcome.”
+
+This is Question 4.4:
+“Could assessment of the outcome have been influenced by knowledge of intervention received?”
+
+Read the provided document.
+
+Your tasks:
+
+1. Consider whether the outcome is:
+     - subjective (e.g., pain scores, quality of life, symptom ratings), OR
+     - objective (e.g., mortality, lab values, imaging results).
+
+   Subjective outcomes are more vulnerable to assessor influence.
+
+2. Determine whether assessors' awareness of intervention (from Question 4.3)
+   could plausibly influence how outcomes were measured, interpreted, or recorded.
+
+3. Assessment could be influenced if:
+     - the outcome requires judgment, interpretation, or scoring,
+     - assessors might consciously or subconsciously rate groups differently,
+     - interviews, observations, or clinician evaluations are involved,
+     - intervention visibility may bias assessment.
+
+4. Assessment is *unlikely* to be influenced if:
+     - the outcome is objective and mechanically measured,
+     - automated or laboratory-based processes are used,
+     - outcome data are extracted from registries with standardized protocols.
+
+5. If assessors were unaware of allocation (from Q4.3), influence is typically unlikely—
+   but still confirm outcome type.
+
+6. Return one of the following:
+   Y  = Yes (outcome assessment could have been influenced)
+   PY = Probably Yes
+   NI = No Information
+   PN = Probably No
+   N  = No (influence unlikely)
+
+7. Provide a short justification explaining why the chosen answer is appropriate.
+
+8. Quote exact sentences or phrases from the document that support your conclusion.
+
+9. If information about outcome type or susceptibility to influence is not reported, answer NI.
+
+Output format:
+
+Answer: <Y | PY | NI | PN | N>
+Justification: <2–4 sentences explaining reasoning>
+Quoted Evidence:
+"<exact text copied from the document>"

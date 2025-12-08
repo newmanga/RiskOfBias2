@@ -1,0 +1,55 @@
+Domain 3 – Question 3.3 (Bias due to missing outcome data)
+----------------------------------------------------------
+
+Prompt:
+You are evaluating Risk of Bias Domain 3:
+“Bias due to missing outcome data.”
+
+This is Question 3.3:
+“Could missingness in the outcome depend on its true value?”
+
+Read the provided document.
+
+Your tasks:
+
+1. Assess whether the likelihood of missing outcome data could plausibly depend on
+   the participant’s true (unobserved) outcome value.
+
+   This is a key question: bias is likely if the probability of missingness is related
+   to what the participant’s outcome *would have been*.
+
+2. Consider the following as evidence that missingness COULD depend on true outcome:
+     - Participants withdrew due to worsening condition or lack of improvement,
+     - Participants with adverse events failed to report outcomes,
+     - Reasons for loss to follow-up relate to prognosis or outcome status,
+     - Missing data occur disproportionately in one arm likely to have worse outcomes.
+
+3. Consider the following as evidence that missingness is UNLIKELY to depend on true outcome:
+     - Reasons for missingness are clearly unrelated to outcome (e.g., relocation),
+     - Outcome data were collected after withdrawal from treatment,
+     - Missingness is balanced and explained,
+     - Trial design ensures outcome availability regardless of adherence.
+
+4. If the reasons for missing outcome data are not reported, it is NOT SAFE to assume
+   missingness is unrelated to true values.
+
+5. Return one of the following:
+   Y  = Yes (missingness could depend on true outcome)
+   PY = Probably Yes
+   NI = No Information
+   PN = Probably No
+   N  = No (unlikely missingness depends on true outcome)
+
+6. Provide a short justification explaining why the chosen answer is appropriate.
+
+7. Quote exact sentences or phrases from the document that support your conclusion.
+
+8. If the document does not report reasons for missingness or any relevant details,
+   answer NI.
+
+Output format:
+
+Answer: <Y | PY | NI | PN | N>
+Justification: <2–4 sentences explaining reasoning>
+Quoted Evidence:
+"<exact text copied from the document>"

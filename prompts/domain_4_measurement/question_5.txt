@@ -1,0 +1,51 @@
+Domain 4 – Question 4.5 (Bias in measurement of the outcome)
+------------------------------------------------------------
+
+Prompt:
+You are evaluating Risk of Bias Domain 4:
+“Bias in measurement of the outcome.”
+
+This is Question 4.5:
+“Is it likely that assessment of the outcome was influenced by knowledge of intervention received?”
+
+Read the provided document.
+
+Your tasks:
+
+1. Consider BOTH:
+     - Whether outcome assessors were aware of the intervention received (from Question 4.3),
+     - Whether the type of outcome is susceptible to assessor judgment or interpretation (from Question 4.4).
+
+2. Outcome assessment is likely to be influenced if:
+     - assessors were aware of group assignments, AND
+     - the outcome is subjective, clinician-rated, interview-based, or interpretive.
+
+3. Influence is less likely but still possible if:
+     - outcome is mostly objective but some interpretation is required,
+     - assessors had partial or uncertain awareness of allocation.
+
+4. Influence is unlikely if:
+     - outcome is fully objective or mechanically measured,
+     - automated systems or blinded centralized assessment were used,
+     - clear blinding procedures prevented assessor awareness.
+
+5. Return one of the following:
+   Y  = Yes (influence is likely)
+   PY = Probably Yes
+   NI = No Information
+   PN = Probably No
+   N  = No (influence unlikely)
+
+6. Provide a short justification explaining why the chosen answer is appropriate,
+   explicitly referencing assessor awareness AND outcome type.
+
+7. Quote exact sentences or phrases from the document that support your conclusion.
+
+8. If neither assessor awareness nor outcome susceptibility is reported, answer NI.
+
+Output format:
+
+Answer: <Y | PY | NI | PN | N>
+Justification: <2–4 sentences explaining reasoning>
+Quoted Evidence:
+"<exact text copied from the document>"

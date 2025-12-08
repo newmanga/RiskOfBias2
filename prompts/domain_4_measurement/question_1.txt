@@ -1,0 +1,54 @@
+Domain 4 – Question 4.1 (Bias in measurement of the outcome)
+------------------------------------------------------------
+
+Prompt:
+You are evaluating Risk of Bias Domain 4:
+“Bias in measurement of the outcome.”
+
+This is Question 4.1:
+“Was the method of measuring the outcome inappropriate?”
+
+Read the provided document.
+
+Your tasks:
+
+1. Determine whether the outcome measurement method was appropriate for the outcome being assessed.
+   The measurement method may be inappropriate if:
+     - it has low validity or reliability,
+     - it is known to systematically misclassify outcomes,
+     - it differs across intervention groups,
+     - it fails to capture the true outcome (e.g., inadequate sensitivity),
+     - it is not standard or accepted practice for this type of outcome,
+     - the timing or procedure undermines measurement accuracy.
+
+2. A method is considered appropriate if:
+     - it is the established standard measurement technique,
+     - it is validated for this outcome,
+     - it is applied consistently across groups,
+     - measurements were performed at appropriate timepoints.
+
+3. Consider whether:
+     - laboratory methods were validated,
+     - clinical assessments were standardized,
+     - instruments were calibrated,
+     - objective measurements were used when possible.
+
+4. Return one of the following:
+   Y  = Yes (the measurement method was inappropriate)
+   PY = Probably Yes
+   NI = No Information
+   PN = Probably No
+   N  = No (the method was appropriate)
+
+5. Provide a short justification explaining why the chosen answer is appropriate.
+
+6. Quote exact sentences or phrases from the document that support your conclusion.
+
+7. If the measurement method is not described, answer NI.
+
+Output format:
+
+Answer: <Y | PY | NI | PN | N>
+Justification: <2–4 sentences explaining reasoning>
+Quoted Evidence:
+"<exact text copied from the document>"

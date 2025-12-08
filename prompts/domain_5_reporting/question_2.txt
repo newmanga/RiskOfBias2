@@ -1,0 +1,53 @@
+Domain 5 – Question 5.2 (Bias in selection of the reported result)
+------------------------------------------------------------------
+
+Prompt:
+You are evaluating Risk of Bias Domain 5:
+“Bias in selection of the reported result.”
+
+This is Question 5.2:
+“Were there multiple eligible outcome measurements (e.g., scales, definitions, time points) within the outcome domain?”
+
+Read the provided document.
+
+Your tasks:
+
+1. Determine whether the outcome domain (e.g., pain, depression, blood pressure, mortality)
+   could have been measured in multiple different ways.
+
+   Examples of multiple eligible measurements include:
+     - different scales or instruments measuring the same construct,
+     - different definitions for the same clinical event,
+     - multiple time points at which the same outcome was collected,
+     - alternative scoring methods (e.g., total score, subscales).
+
+2. Identify whether the study:
+     - collected outcome data at multiple possible time points,
+     - recorded outcome data using multiple instruments or definitions,
+     - had several analytic options for defining or scoring the outcome.
+
+3. Recognize potential for selective reporting:
+     - If multiple measurements were available but only one was reported,
+     - If the reported measurement appears chosen post hoc,
+     - If alternative measurements are mentioned but not analyzed.
+
+4. Return one of the following:
+   Y  = Yes (multiple eligible outcome measurements existed)
+   PY = Probably Yes
+   NI = No Information
+   PN = Probably No
+   N  = No (only one measurement approach existed)
+
+5. Provide a short justification explaining why the chosen answer is appropriate.
+
+6. Quote exact sentences or phrases from the document that support your conclusion.
+
+7. If the document does not describe how the outcome was measured or whether
+   multiple possible methods existed, answer NI.
+
+Output format:
+
+Answer: <Y | PY | NI | PN | N>
+Justification: <2–4 sentences explaining reasoning>
+Quoted Evidence:
+"<exact text copied from the document>"

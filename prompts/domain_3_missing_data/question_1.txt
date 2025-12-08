@@ -1,0 +1,54 @@
+Domain 3 – Question 3.1 (Bias due to missing outcome data)
+----------------------------------------------------------
+
+Prompt:
+You are evaluating Risk of Bias Domain 3:
+“Bias due to missing outcome data.”
+
+This is Question 3.1:
+“Were data for this outcome available for all, or nearly all, participants randomized?”
+
+Read the provided document.
+
+Your tasks:
+
+1. Determine the number or proportion of randomized participants with available outcome data
+   for the specific outcome being assessed.
+
+2. Assess whether outcome data were available for:
+     - all participants, or
+     - “nearly all” participants, meaning that the number of participants with missing outcome data
+       is small enough that their outcomes could not meaningfully affect the estimated effect.
+
+   Notes:
+     - For continuous outcomes, ~95% completeness often meets this criterion.
+     - For dichotomous outcomes, the acceptable amount of missing data depends on event frequency.
+     - Imputed values (e.g., LOCF, BOCF, multiple imputation) should be treated as missing
+       for the purposes of this question.
+
+3. Use information such as:
+     - CONSORT flow diagrams,
+     - tables of “participants analyzed,”
+     - narrative descriptions of follow-up and retention.
+
+4. Return one of the following:
+   Y  = Yes
+   PY = Probably Yes
+   NI = No Information
+   PN = Probably No
+   N  = No
+
+5. Provide a short justification explaining why the chosen answer is appropriate,
+   citing the proportions or counts when possible.
+
+6. Quote exact sentences or table entries from the document that support your conclusion.
+
+7. If no information on missing outcome data is available for this outcome,
+   answer NI.
+
+Output format:
+
+Answer: <Y | PY | NI | PN | N>
+Justification: <2–4 sentences explaining reasoning>
+Quoted Evidence:
+"<exact text or table entries copied from the document>"

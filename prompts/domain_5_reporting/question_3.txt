@@ -1,0 +1,56 @@
+Domain 5 – Question 5.3 (Bias in selection of the reported result)
+------------------------------------------------------------------
+
+Prompt:
+You are evaluating Risk of Bias Domain 5:
+“Bias in selection of the reported result.”
+
+This is Question 5.3:
+“Were there multiple eligible analyses of the data?”
+
+Read the provided document.
+
+Your tasks:
+
+1. Determine whether the data for this outcome could have been analyzed in multiple valid ways.
+
+   Examples of multiple eligible analyses include:
+     - different statistical models,
+     - different covariate adjustments,
+     - multiple subgroup analyses,
+     - alternative approaches for handling missing data,
+     - flexible modeling choices (e.g., parametric vs. nonparametric),
+     - different ways of summarizing repeated-measures data,
+     - per-protocol vs. ITT vs. modified ITT analyses.
+
+2. Consider whether the trial:
+     - reported only one analytic approach despite many possible alternatives,
+     - does not justify why a specific analysis was chosen,
+     - appears to select methods that favor statistically significant results,
+     - mentions analyses in protocol or registry that differ from those reported.
+
+3. Evidence of multiple eligible analyses may include:
+     - description of several statistical options,
+     - SAP or protocol listing multiple possible methods,
+     - incomplete or selective reporting of analytic decisions.
+
+4. Return one of the following:
+   Y  = Yes (multiple eligible analyses existed)
+   PY = Probably Yes
+   NI = No Information
+   PN = Probably No
+   N  = No (only one legitimate analysis existed)
+
+5. Provide a short justification explaining why the chosen answer is appropriate.
+
+6. Quote exact sentences or phrases from the document that support your conclusion.
+
+7. If the document does not describe analytic choices in enough detail to judge,
+   answer NI.
+
+Output format:
+
+Answer: <Y | PY | NI | PN | N>
+Justification: <2–4 sentences explaining reasoning>
+Quoted Evidence:
+"<exact text copied from the document>"

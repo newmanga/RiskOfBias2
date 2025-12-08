@@ -1,0 +1,54 @@
+Domain 5 – Question 5.1 (Bias in selection of the reported result)
+------------------------------------------------------------------
+
+Prompt:
+You are evaluating Risk of Bias Domain 5:
+“Bias in selection of the reported result.”
+
+This is Question 5.1:
+“Were the data that produced this result analysed in accordance with a prespecified analysis plan that was finalized before unblinded outcome data were available?”
+
+Read the provided document.
+
+Your tasks:
+
+1. Look for evidence that the analysis plan for this specific result was:
+     - prespecified,
+     - finalized before unblinded data were available,
+     - included in a protocol or statistical analysis plan (SAP),
+     - registered in a trial registry (e.g., ClinicalTrials.gov).
+
+2. Indicators of prespecification include:
+     - explicit reference to a protocol or SAP,
+     - registration that includes outcome definitions and analysis methods,
+     - statements such as “analysis was prespecified before data lock.”
+
+3. Indicators of *absence* of prespecification include:
+     - no protocol or SAP available,
+     - changes to analyses after seeing data,
+     - exploratory analyses labeled as primary,
+     - reporting methods not described in advance.
+
+4. Consider whether outcome definitions, statistical models, covariates, subgroup analyses,
+   or handling of missing data appear to have been chosen post hoc.
+
+5. Return one of the following:
+   Y  = Yes (analysis was prespecified)
+   PY = Probably Yes
+   NI = No Information
+   PN = Probably No
+   N  = No (analysis not prespecified or modified after unblinding)
+
+6. Provide a short justification explaining why the chosen answer is appropriate.
+
+7. Quote exact sentences or phrases from the document (protocols, SAP, registry entries, or manuscript) 
+   that support your conclusion.
+
+8. If there is no information about prespecification of the analysis plan, answer NI.
+
+Output format:
+
+Answer: <Y | PY | NI | PN | N>
+Justification: <2–4 sentences explaining reasoning>
+Quoted Evidence:
+"<exact text copied from the document>"

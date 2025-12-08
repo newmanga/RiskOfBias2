@@ -1,0 +1,56 @@
+Domain 3 – Question 3.2 (Bias due to missing outcome data)
+----------------------------------------------------------
+
+Prompt:
+You are evaluating Risk of Bias Domain 3:
+“Bias due to missing outcome data.”
+
+This is Question 3.2:
+“Is there evidence that the result was not biased by missing outcome data?”
+
+Read the provided document.
+
+Your tasks:
+
+1. Determine whether the trial provides evidence that missing outcome data
+   did NOT bias the estimated effect.
+
+   Acceptable evidence includes:
+     - Sensitivity analyses demonstrating robustness to missing data assumptions,
+     - Explicit statements that missing data were minimal and unlikely to influence results,
+     - Balanced missingness across groups AND missingness unrelated to outcomes,
+     - Statistical approaches that appropriately handle missingness (e.g., model-based methods)
+       *and* were justified by the authors.
+
+2. Missing data are more likely NOT to bias results when:
+     - missingness is very low,
+     - missingness is clearly unrelated to true outcomes,
+     - outcomes were obtained for all participants who discontinued treatment,
+     - reasons for missingness are similar across study arms.
+
+3. Missing data MAY bias results when:
+     - participants lost to follow-up differ in prognosis,
+     - reasons for missingness differ across intervention groups,
+     - substantial proportion is missing,
+     - sensitivity analyses are not presented or contradict main results.
+
+4. Return one of the following:
+   Y  = Yes (evidence shows missing data did not bias results)
+   PY = Probably Yes
+   NI = No Information
+   PN = Probably No
+   N  = No (evidence suggests missing data likely biased the results)
+
+5. Provide a short justification explaining why the chosen answer is appropriate.
+
+6. Quote exact sentences or phrases from the document that support your conclusion.
+
+7. If there is no discussion or analysis of whether missing data influenced results,
+   answer NI.
+
+Output format:
+
+Answer: <Y | PY | NI | PN | N>
+Justification: <2–4 sentences explaining reasoning>
+Quoted Evidence:
+"<exact text or table entries copied from the document>"

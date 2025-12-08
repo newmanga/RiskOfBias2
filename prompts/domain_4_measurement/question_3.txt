@@ -1,0 +1,55 @@
+Domain 4 – Question 4.3 (Bias in measurement of the outcome)
+------------------------------------------------------------
+
+Prompt:
+You are evaluating Risk of Bias Domain 4:
+“Bias in measurement of the outcome.”
+
+This is Question 4.3:
+“Were outcome assessors aware of the intervention received by study participants?”
+
+Read the provided document.
+
+Your tasks:
+
+1. Determine whether individuals responsible for measuring or assessing the outcome
+   were blinded to participants’ assigned interventions.
+
+2. Outcome assessors are considered *aware* if:
+     - the document explicitly states they were unblinded,
+     - they had access to treatment allocation information,
+     - the nature of the intervention made blinding impossible (e.g., surgery),
+     - they could infer allocation based on visible differences between groups.
+
+3. Outcome assessors are considered *unaware* if:
+     - blinding procedures were implemented and maintained,
+     - the document explicitly states assessors were blinded,
+     - objective automated measurements were used (e.g., lab tests),
+       *unless* assessors could still infer allocation from contextual information.
+
+4. Consider special cases:
+     - If outcome is highly subjective, assessor awareness is more important.
+     - If outcome is objective (e.g., mortality), awareness may not increase bias risk directly,
+       but you should still answer the signalling question according to awareness,
+       not outcome sensitivity.
+
+5. Return one of the following:
+   Y  = Yes (assessors were aware)
+   PY = Probably Yes
+   NI = No Information
+   PN = Probably No
+   N  = No (assessors were unaware)
+
+6. Provide a short justification explaining why the chosen answer is appropriate.
+
+7. Quote exact sentences or phrases from the document that support your conclusion.
+
+8. If the report provides no information about blinding of outcome assessors,
+   answer NI.
+
+Output format:
+
+Answer: <Y | PY | NI | PN | N>
+Justification: <2–4 sentences explaining reasoning>
+Quoted Evidence:
+"<exact text copied from the document>"
