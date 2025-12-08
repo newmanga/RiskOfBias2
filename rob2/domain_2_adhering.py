@@ -37,20 +37,27 @@ def get_next_question_domain2_adhering(state: dict):
     if state.get("2.2") is None:
         return "2.2"
 
-    # Q2.3 – Were deviations balanced?
-    if state.get("2.3") is None:
+    aware = (state["2.1"] in (YES | NO_INFO)) or (state["2.2"] in (YES | NO_INFO))
+
+    # Q2.3 – Non-protocol interventions balanced (only if awareness)
+    if aware and state.get("2.3") is None:
         return "2.3"
 
-    # Q2.4 – Sufficient adherence to assigned intervention
+    # Q2.4 – Failures in implementing the intervention
     if state.get("2.4") is None:
         return "2.4"
 
-    # Q2.5 – Was appropriate adherence-effect analysis used?
+    # Q2.5 – Non-adherence that could affect outcomes
     if state.get("2.5") is None:
         return "2.5"
 
-    # Q2.6 – If inappropriate analysis, is bias likely?
-    if state["2.5"] in NO and state.get("2.6") is None:
+    # Q2.6 – Analysis appropriateness, conditional per template
+    needs_analysis = (
+        (state.get("2.3") in (NO | NO_INFO)) or
+        (state["2.4"] in (YES | NO_INFO)) or
+        (state["2.5"] in (YES | NO_INFO))
+    )
+    if needs_analysis and state.get("2.6") is None:
         return "2.6"
 
     # Done

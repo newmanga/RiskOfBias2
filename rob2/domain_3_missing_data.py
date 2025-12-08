@@ -22,7 +22,7 @@ class Domain3Result(DomainResult):
 def get_next_question_domain3(state: dict):
     """
     Sequence:
-      3.1 → 3.2 → 3.3 → 3.4
+      3.1 → 3.2 (if 3.1 = N/PN/NI) → 3.3 (if 3.2 = N/PN) → 3.4 (if 3.3 = Y/PY/NI)
 
     Returns:
         "3.x" → next question to ask
@@ -32,13 +32,13 @@ def get_next_question_domain3(state: dict):
     if state.get("3.1") is None:
         return "3.1"
 
-    if state.get("3.2") is None:
+    if state.get("3.2") is None and state["3.1"] in (NO | NO_INFO):
         return "3.2"
 
-    if state.get("3.3") is None:
+    if state.get("3.3") is None and state.get("3.2") in NO:
         return "3.3"
 
-    if state.get("3.4") is None:
+    if state.get("3.4") is None and state.get("3.3") in (YES | NO_INFO):
         return "3.4"
 
     return None

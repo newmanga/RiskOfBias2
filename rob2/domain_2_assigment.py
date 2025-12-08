@@ -3,7 +3,6 @@
 # ============================================
 
 from .common import DomainResult, NO, NO_INFO, Response, YES
-from .questions import DOMAIN2_QUESTIONS
 
 
 class Domain2Result(DomainResult):
@@ -34,7 +33,7 @@ def get_next_question_domain2(state: dict):
     if state.get("2.2") is None:
         return "2.2"
 
-    aware = (state["2.1"] in YES) or (state["2.2"] in YES)
+    aware = (state["2.1"] in (YES | NO_INFO)) or (state["2.2"] in (YES | NO_INFO))
 
     # Q2.3 – only if awareness exists
     if aware:
@@ -47,7 +46,7 @@ def get_next_question_domain2(state: dict):
                 return "2.4"
 
             # Q2.5
-            if state.get("2.5") is None:
+            if state.get("2.5") is None and state["2.4"] in (YES | NO_INFO):
                 return "2.5"
 
     # Q2.6 – always needed
@@ -55,7 +54,7 @@ def get_next_question_domain2(state: dict):
         return "2.6"
 
     # Q2.7 – only if analysis inappropriate
-    if state["2.6"] in NO and state.get("2.7") is None:
+    if state["2.6"] in (NO | NO_INFO) and state.get("2.7") is None:
         return "2.7"
 
     # Complete

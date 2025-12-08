@@ -33,10 +33,11 @@ DOMAIN3_MISSING_DATA_QUESTIONS = {
 }
 
 DOMAIN4_MEASUREMENT_QUESTIONS = {
-    "4.1": "Was the method of measuring the outcome appropriate?",
-    "4.2": "Was the outcome measurement similar across intervention groups?",
-    "4.3": "Could knowledge of intervention assignment influence outcome assessment?",
-    "4.4": "If yes, is it likely that this influenced the outcome?",
+    "4.1": "Was the method of measuring the outcome inappropriate?",
+    "4.2": "Was the measurement or ascertainment of the outcome different between intervention groups?",
+    "4.3": "Were outcome assessors aware of the intervention received by study participants?",
+    "4.4": "Could assessment of the outcome have been influenced by knowledge of the intervention received?",
+    "4.5": "Is it likely that assessment of the outcome was influenced by knowledge of the intervention received?",
 }
 
 DOMAIN5_REPORTING_QUESTIONS = {
@@ -44,5 +45,4 @@ DOMAIN5_REPORTING_QUESTIONS = {
     "5.2": "Were there multiple eligible outcome measurements (scales, definitions) within this outcome domain?",
     "5.3": "Were there multiple eligible analyses of the data?",
 }
-
 
