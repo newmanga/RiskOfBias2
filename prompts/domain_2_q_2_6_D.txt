@@ -1,0 +1,46 @@
+Domain 2 – Question 2.6 (Effect of Adhering to Intervention)
+-----------------------------------------------------------
+
+Prompt:
+You are evaluating Risk of Bias Domain 2 for the “Effect of Adhering to Intervention.”
+This is Question 2.6:
+“Was there a substantial risk of bias due to deviations from the intended interventions?”
+
+Read the provided document.
+
+Your tasks:
+
+1. Review the evidence from Questions 2.1–2.5 to determine whether:
+     - deviations from intended intervention occurred,
+     - deviations arose from the trial context or routine practice,
+     - deviations were unbalanced between groups,
+     - deviations were likely to influence the outcome,
+     - and whether the analysis appropriately estimated the adherence effect.
+
+2. Assess the overall risk of bias based on the pattern of findings:
+     - Consider **High risk** if important deviations occurred,
+       were unbalanced, likely affected outcomes,
+       and/or the analysis method was inappropriate.
+     - Consider **Some concerns** if information is incomplete or uncertainties remain.
+     - Consider **Low risk** if deviations were absent, balanced, unlikely to affect the outcome,
+       and an appropriate adherence-effect analysis was used.
+
+3. Return one of the following:
+   Y  = Yes (there is substantial risk of bias)
+   PY = Probably Yes
+   NI = No Information
+   PN = Probably No
+   N  = No (no substantial risk)
+
+4. Provide a short justification explaining why the chosen answer is appropriate,
+   referencing earlier answers when relevant.
+
+5. Quote exact sentences or phrases from the document that support your conclusion.
+   If no relevant information is reported, answer NI and state that data is insufficient.
+
+Output format:
+
+Answer: <Y | PY | NI | PN | N>
+Justification: <2–4 sentences explaining reasoning>
+Quoted Evidence:
+"<exact text copied from the document>"

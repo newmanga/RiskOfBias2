@@ -1,0 +1,48 @@
+Domain 1 – Question 1.2
+-----------------------
+
+Prompt:
+You are evaluating Risk of Bias Domain 1, Question 1.2:
+“Was the allocation sequence concealed until participants were enrolled and assigned to interventions?”
+
+Read the provided document.
+
+Your tasks:
+
+1. Identify whether allocation concealment was implemented.
+
+   Adequate concealment methods include:
+     - central randomization
+     - pharmacy-controlled allocation
+     - identical drug containers prepared by a third party
+     - opaque, sealed, sequentially numbered envelopes
+     - telephone or web-based randomization services
+     - any method that prevents prediction of upcoming assignments
+
+   Inadequate concealment signals include:
+     - open allocation lists
+     - non-opaque envelopes
+     - envelopes that are unsealed or sequentially predictable
+     - investigator access to the sequence
+     - predictable block sizes known to recruiting staff
+     - any indication that allocations could be foreseen or manipulated
+
+2. Return one of the following:
+   Y  = Yes
+   PY = Probably Yes
+   NI = No Information
+   PN = Probably No
+   N  = No
+
+3. Provide a short justification explaining why the chosen answer is appropriate.
+
+4. Quote exact sentences or phrases from the document that support your conclusion.
+
+5. If no relevant information is available in the document, answer NI.
+
+Output format:
+
+Answer: <Y | PY | NI | PN | N>
+Justification: <2–4 sentences explaining reasoning>
+Quoted Evidence:
+"<exact text copied from the document>"

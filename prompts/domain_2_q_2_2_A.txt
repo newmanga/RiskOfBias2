@@ -1,0 +1,41 @@
+Domain 2 – Question 2.2
+-----------------------
+
+Prompt:
+You are evaluating Risk of Bias Domain 2, Question 2.2:
+“Were carers and people delivering the interventions aware of participants’ assigned intervention during the trial?”
+
+Read the provided document.
+
+Your tasks:
+
+1. Determine whether carers, clinicians, nurses, or intervention deliverers were blinded.
+   They are considered aware if:
+     - They were told the allocation,
+     - They could identify the intervention based on its characteristics,
+     - Blinding was not implemented or was broken,
+     - The intervention required active involvement making blinding impossible (e.g., surgery, psychotherapy).
+
+2. Determine whether carers were probably unaware (e.g., identical placebos, matching procedures).
+
+3. Identify whether the document reports blinding of carers or intervention administrators explicitly or implicitly.
+
+4. Return one of the following:
+   Y  = Yes (carers were aware)
+   PY = Probably Yes
+   NI = No Information
+   PN = Probably No
+   N  = No (carers were unaware)
+
+5. Provide a short justification explaining why the chosen answer is appropriate.
+
+6. Quote exact sentences or phrases from the document that support your conclusion.
+
+7. If no information is available about carer blinding or awareness, answer NI.
+
+Output format:
+
+Answer: <Y | PY | NI | PN | N>
+Justification: <2–4 sentences explaining reasoning>
+Quoted Evidence:
+"<exact text copied from the document>"

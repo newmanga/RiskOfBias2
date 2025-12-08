@@ -1,0 +1,50 @@
+Domain 2 – Question 2.5
+-----------------------
+
+Prompt:
+You are evaluating Risk of Bias Domain 2, Question 2.5:
+“Were these deviations from intended intervention balanced between groups?”
+
+Read the provided document.
+
+Your tasks:
+
+1. Determine whether any deviations from the intended intervention affected one group more than the other.
+   Deviations are unbalanced if:
+     - they occur primarily in one intervention arm,
+     - the magnitude or frequency differs substantially,
+     - one group receives additional or alternative treatments not mirrored in the other.
+
+2. Balanced deviations include:
+     - similar types and frequencies of deviations across groups,
+     - co-interventions applied equally,
+     - protocol departures affecting both groups comparably.
+
+3. If no deviations were identified in Questions 2.3–2.4, answer:
+     N = No (deviations not unbalanced)
+
+4. If deviations occurred but the document suggests equal distribution, consider:
+     PN or N
+
+5. If deviations clearly favored or disadvantaged one group, consider:
+     Y or PY
+
+6. Return one of the following:
+   Y  = Yes (deviations were unbalanced between groups)
+   PY = Probably Yes
+   NI = No Information
+   PN = Probably No
+   N  = No (deviations were balanced or none occurred)
+
+7. Provide a short justification explaining why the chosen answer is appropriate.
+
+8. Quote exact sentences or phrases from the document that support your conclusion.
+
+9. If no relevant information is available about group-wise distribution of deviations, answer NI.
+
+Output format:
+
+Answer: <Y | PY | NI | PN | N>
+Justification: <2–4 sentences explaining reasoning>
+Quoted Evidence:
+"<exact text copied from the document>"

@@ -1,0 +1,48 @@
+Domain 2 – Question 2.1 (Effect of Adhering to Intervention)
+-----------------------------------------------------------
+
+Prompt:
+You are evaluating Risk of Bias Domain 2 for the “Effect of Adhering to Intervention.”
+This is Question 2.1:
+“Were there deviations from the intended intervention that arose because of the trial context?”
+
+Read the provided document.
+
+Your tasks:
+
+1. Identify whether any deviations from the intended intervention occurred because of the experimental context.
+   Deviations arise from the trial context when:
+     - they were caused by study procedures (e.g., enhanced monitoring, study visits, protocol-driven actions),
+     - they occurred because participants or carers were influenced by the knowledge that this was a research study,
+     - they would *not* have occurred in normal clinical practice.
+
+2. Examples include:
+     - patients modifying behavior due to study participation,
+     - clinicians altering treatment based on trial assignment knowledge,
+     - protocol-driven deviations intended only for the study,
+     - study-specific co-interventions.
+
+3. Deviations *not* due to the trial context include:
+     - routine clinical variations,
+     - adherence problems occurring in normal clinical environments,
+     - deviations unrelated to study processes.
+
+4. Return one of the following:
+   Y  = Yes (deviations due to trial context occurred)
+   PY = Probably Yes
+   NI = No Information
+   PN = Probably No
+   N  = No (no deviations due to trial context)
+
+5. Provide a short justification explaining why the chosen answer is appropriate.
+
+6. Quote exact sentences or phrases from the document that support your conclusion.
+
+7. If no information is provided about the nature or causes of deviations, answer NI.
+
+Output format:
+
+Answer: <Y | PY | NI | PN | N>
+Justification: <2–4 sentences explaining reasoning>
+Quoted Evidence:
+"<exact text copied from the document>"

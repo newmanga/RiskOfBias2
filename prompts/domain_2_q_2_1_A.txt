@@ -1,0 +1,41 @@
+Domain 2 – Question 2.1
+-----------------------
+
+Prompt:
+You are evaluating Risk of Bias Domain 2, Question 2.1:
+“Were participants aware of their assigned intervention during the trial?”
+
+Read the provided document.
+
+Your tasks:
+
+1. Determine whether participants were blinded to the intervention they received.
+   Participants are considered aware if:
+     - They were told their allocation,
+     - The intervention was obviously identifiable (e.g., surgery vs. no surgery),
+     - They could infer their assignment from noticeable differences,
+     - There is evidence that blinding was broken.
+
+2. Determine whether participants were probably unaware (e.g., placebos indistinguishable from active treatment).
+
+3. Identify whether the document explicitly or implicitly reports participant awareness or blinding.
+
+4. Return one of the following:
+   Y  = Yes (participants were aware)
+   PY = Probably Yes
+   NI = No Information
+   PN = Probably No
+   N  = No (participants were unaware)
+
+5. Provide a short justification explaining why the chosen answer is appropriate.
+
+6. Quote exact sentences or phrases from the document that support your conclusion.
+
+7. If the document does not report participant blinding or awareness, answer NI.
+
+Output format:
+
+Answer: <Y | PY | NI | PN | N>
+Justification: <2–4 sentences explaining reasoning>
+Quoted Evidence:
+"<exact text copied from the document>"

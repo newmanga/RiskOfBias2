@@ -1,0 +1,45 @@
+Domain 1 – Question 1.1
+-----------------------
+
+Prompt:
+You are evaluating Risk of Bias Domain 1, Question 1.1:
+“Was the allocation sequence random?”
+
+Read the provided document.
+
+Your tasks:
+
+1. Identify whether the study used a truly random method to generate the allocation sequence.
+   Random methods include:
+     - computer-generated random numbers
+     - random number tables
+     - coin toss or dice rolling
+     - shuffled cards or envelopes
+     - minimization with a random element
+   Non-random or predictable methods include:
+     - alternation
+     - date of birth
+     - admission date
+     - medical record number
+     - clinician or investigator judgment
+     - any systematic or predictable rule
+
+2. Return one of the following:
+   Y  = Yes
+   PY = Probably Yes
+   NI = No Information
+   PN = Probably No
+   N  = No
+
+3. Provide a short justification explaining why the chosen answer is appropriate.
+
+4. Quote exact sentences or phrases from the document that support your conclusion.
+
+5. If no relevant information is available in the document, answer NI.
+
+Output format:
+
+Answer: <Y | PY | NI | PN | N>
+Justification: <2–4 sentences explaining reasoning>
+Quoted Evidence:
+"<exact text copied from the document>"

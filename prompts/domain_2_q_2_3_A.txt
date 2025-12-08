@@ -1,0 +1,46 @@
+Domain 2 – Question 2.3
+-----------------------
+
+Prompt:
+You are evaluating Risk of Bias Domain 2, Question 2.3:
+“Were there deviations from the intended intervention that arose because of the experimental context?”
+
+Read the provided document.
+
+Your tasks:
+
+1. Identify whether any deviations from the assigned intervention occurred during the trial.
+   Examples of deviations due to the experimental context include:
+     - Participants receiving additional unplanned interventions,
+     - Participants switching groups,
+     - Changes in co-interventions,
+     - Altered treatment behaviors influenced by trial participation or awareness of assignment.
+
+2. Determine whether these deviations occurred specifically because participants, carers, or deliverers knew the assigned intervention 
+   or because of trial-related procedures (e.g., enhanced monitoring, study-specific interactions).
+
+3. Focus ONLY on deviations that:
+     - were caused by the trial setting, OR
+     - would not have occurred outside the research context.
+
+4. Ignore deviations unrelated to the trial context (e.g., routine clinical variations not influenced by participation).
+
+5. Return one of the following:
+   Y  = Yes (deviations occurred because of the experimental context)
+   PY = Probably Yes
+   NI = No Information
+   PN = Probably No
+   N  = No (no evidence of such deviations)
+
+6. Provide a short justification explaining why the chosen answer is appropriate.
+
+7. Quote exact sentences or phrases from the document that support your conclusion.
+
+8. If no information is provided about deviations or reasons for deviations, answer NI.
+
+Output format:
+
+Answer: <Y | PY | NI | PN | N>
+Justification: <2–4 sentences explaining reasoning>
+Quoted Evidence:
+"<exact text copied from the document>"

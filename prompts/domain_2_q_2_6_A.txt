@@ -1,0 +1,48 @@
+Domain 2 – Question 2.6
+-----------------------
+
+Prompt:
+You are evaluating Risk of Bias Domain 2, Question 2.6:
+“Was an appropriate analysis used to estimate the effect of assignment to intervention?”  
+(This refers to an intention-to-treat [ITT] effect.)
+
+Read the provided document.
+
+Your tasks:
+
+1. Determine whether the analysis estimates the effect of assignment, not adherence.
+   Appropriate analyses for ITT include:
+     - intention-to-treat (ITT),
+     - modified ITT (if exclusions are minimal and unrelated to deviations),
+     - analyses that include all randomized participants in their assigned groups.
+
+2. Identify inappropriate approaches, such as:
+     - per-protocol or as-treated analyses,
+     - excluding participants based on adherence,
+     - reassigning participants to groups they actually received,
+     - analyses that systematically remove deviators in a way likely to bias the estimate.
+
+3. Determine whether the analysis was likely to be biased because of:
+     - inappropriate exclusion of participants,
+     - differential loss to follow-up,
+     - deviations influencing who was included in analysis.
+
+4. Return one of the following:
+   Y  = Yes (appropriate analysis used)
+   PY = Probably Yes
+   NI = No Information
+   PN = Probably No
+   N  = No (inappropriate analysis used)
+
+5. Provide a short justification explaining why the chosen answer is appropriate.
+
+6. Quote exact sentences or phrases from the document that support your conclusion.
+
+7. If no information about the analysis approach is reported, answer NI.
+
+Output format:
+
+Answer: <Y | PY | NI | PN | N>
+Justification: <2–4 sentences explaining reasoning>
+Quoted Evidence:
+"<exact text copied from the document>"

@@ -1,0 +1,51 @@
+Domain 2 – Question 2.4
+-----------------------
+
+Prompt:
+You are evaluating Risk of Bias Domain 2, Question 2.4:
+“Were these deviations from intended intervention likely to have affected the outcome?”
+
+Read the provided document.
+
+Your tasks:
+
+1. Examine any deviations identified in the study and determine whether they could plausibly influence the outcome.
+   Deviations may affect outcomes if they:
+     - change the amount, type, or timing of intervention received,
+     - introduce systematic differences between groups,
+     - alter co-interventions,
+     - create behavioral changes relevant to outcomes.
+
+2. Consider whether the deviations:
+     - are directly related to the intervention,
+     - would plausibly bias the results in favor of or against an intervention,
+     - impact clinical or behavioral mechanisms related to the outcome.
+
+3. If no deviations were identified in Question 2.3, answer:
+     N = No
+
+4. If deviations occurred but appear minor, balanced, or clinically irrelevant, consider:
+     PN = Probably No
+
+5. If deviations occurred and have a clear or probable effect on outcomes, consider:
+     Y or PY
+
+6. Return one of the following:
+   Y  = Yes (deviations likely affected the outcome)
+   PY = Probably Yes
+   NI = No Information (insufficient details to judge)
+   PN = Probably No
+   N  = No (unlikely to affect outcome)
+
+7. Provide a short justification explaining why the chosen answer is appropriate.
+
+8. Quote exact sentences or phrases from the document that support your conclusion.
+
+9. If no relevant information is provided about the impact of deviations on outcomes, answer NI.
+
+Output format:
+
+Answer: <Y | PY | NI | PN | N>
+Justification: <2–4 sentences explaining reasoning>
+Quoted Evidence:
+"<exact text copied from the document>"

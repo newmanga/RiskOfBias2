@@ -1,0 +1,46 @@
+Domain 2 – Question 2.7
+-----------------------
+
+Prompt:
+You are evaluating Risk of Bias Domain 2, Question 2.7:
+“Was there a substantial risk of bias due to deviations from intended intervention?”
+
+Read the provided document.
+
+Your tasks:
+
+1. Review the answers to Questions 2.1–2.6 and the associated evidence to determine whether:
+     - participants or carers were aware of assignment,
+     - deviations occurred,
+     - deviations were likely to affect the outcome,
+     - deviations were unbalanced between groups,
+     - the analysis appropriately estimated the ITT effect.
+
+2. Determine whether the overall pattern of evidence indicates a substantial risk of bias.
+
+3. Consider:
+     - High risk if deviations likely biased the outcome AND were unbalanced, OR
+       if the analysis was inappropriate (e.g., per-protocol/as-treated in ITT context).
+     - Some concerns if information is incomplete or uncertainty exists.
+     - Low risk if deviations were absent, balanced, unlikely to affect outcomes,
+       AND an appropriate ITT analysis was used.
+
+4. Return one of the following:
+   Y  = Yes (there is substantial risk of bias)
+   PY = Probably Yes
+   NI = No Information (cannot judge)
+   PN = Probably No
+   N  = No (no substantial risk)
+
+5. Provide a short justification explaining why the chosen answer is appropriate,
+   clearly referencing earlier question responses when relevant.
+
+6. Quote exact sentences or phrases from the document that support your conclusion.
+   If there is no relevant information, answer NI and state that data is insufficient.
+
+Output format:
+
+Answer: <Y | PY | NI | PN | N>
+Justification: <2–4 sentences explaining reasoning>
+Quoted Evidence:
+"<exact text copied from the document>"
