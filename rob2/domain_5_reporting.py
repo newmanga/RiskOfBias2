@@ -3,7 +3,13 @@
 # ============================================
 
 from .common import DomainResult, NO, NO_INFO, Response, YES
-from .questions import DOMAIN5_REPORTING_QUESTIONS
+
+# Domain 5 signalling questions
+QUESTIONS = {
+    "5.1": "Were the data that produced this result analyzed according to a pre-specified analysis plan?",
+    "5.2": "Were there multiple eligible outcome measurements (scales, definitions) within this outcome domain?",
+    "5.3": "Were there multiple eligible analyses of the data?",
+}
 
 
 class Domain5Result(DomainResult):

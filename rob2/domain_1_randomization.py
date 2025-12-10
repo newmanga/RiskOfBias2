@@ -3,7 +3,13 @@
 # ============================================
 
 from .common import DomainResult, NO, NO_INFO, Response, YES
-from .questions import DOMAIN1_RANDOMIZATION_QUESTIONS
+
+# Domain 1 signalling questions
+QUESTIONS = {
+    "1.1": "Was the allocation sequence random?",
+    "1.2": "Was the allocation sequence concealed until participants were enrolled and assigned?",
+    "1.3": "Did baseline differences between groups suggest a problem with the randomization process?",
+}
 
 
 class Domain1Result(DomainResult):

@@ -3,7 +3,15 @@
 # ============================================
 
 from .common import DomainResult, NO, NO_INFO, Response, YES
-from .questions import DOMAIN4_MEASUREMENT_QUESTIONS
+
+# Domain 4 signalling questions
+QUESTIONS = {
+    "4.1": "Was the method of measuring the outcome inappropriate?",
+    "4.2": "Was the measurement or ascertainment of the outcome different between intervention groups?",
+    "4.3": "Were outcome assessors aware of the intervention received by study participants?",
+    "4.4": "Could assessment of the outcome have been influenced by knowledge of the intervention received?",
+    "4.5": "Is it likely that assessment of the outcome was influenced by knowledge of the intervention received?",
+}
 
 
 class Domain4Result(DomainResult):

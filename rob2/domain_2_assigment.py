@@ -4,6 +4,17 @@
 
 from .common import DomainResult, NO, NO_INFO, Response, YES
 
+# Domain 2 (assignment) signalling questions
+QUESTIONS = {
+    "2.1": "Were participants aware of their assigned intervention during the trial?",
+    "2.2": "Were carers/people delivering the interventions aware of participants’ assigned intervention?",
+    "2.3": "If awareness occurred, were there deviations from intended intervention that arose because of the trial context?",
+    "2.4": "If deviations occurred, were these deviations likely to have affected the outcome?",
+    "2.5": "If deviations occurred, were these deviations balanced between groups?",
+    "2.6": "Was an appropriate analysis used to estimate the effect of assignment? (Typically ITT.)",
+    "2.7": "If the analysis was inappropriate, is the result likely to be biased?",
+}
+
 
 class Domain2Result(DomainResult):
     def __init__(self, judgement, explanation, path):

@@ -3,7 +3,14 @@
 # ============================================
 
 from .common import DomainResult, NO, NO_INFO, Response, YES
-from .questions import DOMAIN3_MISSING_DATA_QUESTIONS
+
+# Domain 3 signalling questions
+QUESTIONS = {
+    "3.1": "Were data for this outcome available for all or nearly all participants randomized?",
+    "3.2": "If not, is there evidence that the result was not biased by missing outcome data?",
+    "3.3": "Could the missingness depend on the true value of the outcome?",
+    "3.4": "If yes, is the proportion of missing data not sufficient to induce clinically relevant bias?",
+}
 
 
 class Domain3Result(DomainResult):

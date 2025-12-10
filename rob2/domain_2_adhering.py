@@ -3,7 +3,16 @@
 # ============================================
 
 from .common import DomainResult, NO, NO_INFO, Response, YES
-from .questions import DOMAIN2_ADHERENCE_QUESTIONS
+
+# Domain 2 (adhering) signalling questions
+QUESTIONS = {
+    "2.1": "Were there deviations from intended intervention that arose because of the trial context?",
+    "2.2": "Were these deviations likely to have affected the outcome?",
+    "2.3": "Were these deviations balanced between groups?",
+    "2.4": "Were participants sufficiently adherent to the assigned intervention throughout the trial?",
+    "2.5": "Was an appropriate analysis used to estimate the effect of adhering to the intervention?",
+    "2.6": "If the analysis was inappropriate, is the estimate likely to be biased?",
+}
 
 
 class Domain2AdherenceResult(DomainResult):
