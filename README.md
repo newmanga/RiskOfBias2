@@ -28,6 +28,10 @@ Tools and notebooks for automating Risk of Bias (RoB 2) assessments across study
 - Registry (`rob2/domains.py`) maps domain keys to implementations and exposes `get_domain_specs()` for consumers.
 - Each domain module also exports `QUESTIONS` and compatibility helpers for legacy imports.
 
+## Attribution and licensing for RoB 2 content
+- The signalling questions are obtained verbatim from the Cochrane Risk of Bias 2 (RoB 2) tool and are provided under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License (CC BY-NC-ND 4.0). See `NOTICE` and `LICENSES/CC-BY-NC-ND-4.0.txt`.
+- This codebase is licensed separately; use of the RoB 2 content must comply with the CC BY-NC-ND terms (non-commercial, no derivatives, attribution required).
+
 ## Notes
 - Outputs are stored under `outputs/`.
 - Prompt files must exist for each signalling question; missing prompts are reported in the notebook output.
