@@ -1,7 +1,8 @@
 """Shared types and helpers for RoB domain evaluations."""
 
+from dataclasses import dataclass
 from enum import Enum
-from typing import Iterable, List, Optional
+from typing import Callable, Dict, Iterable, List, Optional
 
 
 class Response(Enum):
@@ -42,3 +43,37 @@ class DomainResult:
         print(self.explanation)
         print("====================================================================")
 
+
+@dataclass
+class DomainSpec:
+    """Metadata and hooks for a RoB domain."""
+
+    key: str
+    title: str
+    questions: Dict[str, str]
+    get_next_question: Callable[[dict], Optional[str]]
+    evaluate: Callable[..., DomainResult]
+
+
+class BaseDomain:
+    """Common interface for domain implementations."""
+
+    key: str
+    title: str
+    questions: Dict[str, str]
+
+    def get_next_question(self, state: dict) -> Optional[str]:
+        raise NotImplementedError
+
+    def evaluate(self, *args, **kwargs) -> DomainResult:
+        raise NotImplementedError
+
+    def as_spec(self) -> DomainSpec:
+        """Return a light registry-friendly view of this domain."""
+        return DomainSpec(
+            key=self.key,
+            title=self.title,
+            questions=self.questions,
+            get_next_question=self.get_next_question,
+            evaluate=self.evaluate,
+        )
