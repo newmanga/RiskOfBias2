@@ -3,50 +3,30 @@ Domain 2 – Question 2.5 (Effect of Adhering to Intervention)
 
 Prompt:
 You are evaluating Risk of Bias Domain 2 for the “Effect of Adhering to Intervention.”
-This is Question 2.5:
-“Was an appropriate analysis used to estimate the effect of adhering to the intervention?”
+This is Question 2.5 (asked only if specified in preliminary considerations):
+“Was there non-adherence to the assigned intervention regimen that could have affected participants’ outcomes?”
 
 Read the provided document.
 
 Your tasks:
 
-1. Determine whether the analysis appropriately estimates the per-protocol (adherence-based) effect,
-   rather than the intention-to-treat (ITT) effect.
-
-2. Appropriate analyses for the *effect of adhering* typically include:
-     - instrumental variable analyses (e.g., using randomization as an instrument),
-     - analyses adjusting for post-randomization variables that influence adherence,
-     - structural equation models estimating adherence effects,
-     - principal stratification approaches,
-     - methods that appropriately account for confounding introduced by non-adherence.
-
-3. Analyses that are *not* appropriate for estimating adherence effects include:
-     - simple per-protocol analyses without adjustment for confounders,
-     - as-treated analyses that ignore the randomized design,
-     - analyses that exclude non-adherent participants without addressing bias,
-     - any approach that conditions on adherence without correcting for confounding.
-
-4. Identify whether the study provides:
-     - details on the analytic method,
-     - justification of assumptions,
-     - evidence that confounding due to adherence was addressed.
-
-5. Return one of the following:
-   Y  = Yes (analysis appropriate for estimating adherence effect)
+1. Look for evidence of imperfect compliance, cessation of the intervention, crossovers to the comparator, or switches to another active intervention.
+2. Consider the proportion continuing their assigned intervention throughout follow-up and whether any non-adherence could affect outcomes.
+3. For interventions administered once where imperfect adherence is impossible and most participants received the assigned intervention, answer N.
+4. Return one of the following:
+   NA = Not Applicable (non-adherence not being assessed)
+   Y  = Yes (non-adherence could have affected outcomes)
    PY = Probably Yes
-   NI = No Information
    PN = Probably No
-   N  = No (analysis inappropriate)
-
-6. Provide a short justification explaining why the chosen answer is appropriate.
-
-7. Quote exact sentences or phrases from the document that support your conclusion.
-
-8. If the analysis method is not described or is insufficient to judge appropriateness, answer NI.
+   N  = No (non-adherence unlikely to affect outcomes)
+   NI = No Information
+5. Provide a short justification explaining why the chosen answer is appropriate.
+6. Quote exact sentences or phrases from the document that support your conclusion.
+7. If non-adherence information is not reported, answer NI.
 
 Output format:
 
-Answer: <Y | PY | NI | PN | N>
+Answer: <NA | Y | PY | PN | N | NI>
 Justification: <2–4 sentences explaining reasoning>
 Quoted Evidence:
 "<exact text copied from the document>"

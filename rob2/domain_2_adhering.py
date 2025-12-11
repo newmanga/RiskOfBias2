@@ -2,7 +2,15 @@
 # RoB 2.0 – Domain 2: Effect of Adhering to Intervention
 # ============================================
 
-from .common import BaseDomain, DomainResult, NO, NO_INFO, Response, YES
+from .common import (
+    BaseDomain,
+    DomainResult,
+    NO,
+    NO_INFO,
+    NOT_APPLICABLE,
+    Response,
+    YES,
+)
 
 
 class Domain2AdherenceResult(DomainResult):
@@ -24,12 +32,12 @@ class Domain2Adhering(BaseDomain):
     key = "domain_2_adhering"
     title = "Domain 2: Risk of Bias – Effect of Adhering to Intervention"
     questions = {
-        "2.1": "Were there deviations from intended intervention that arose because of the trial context?",
-        "2.2": "Were these deviations likely to have affected the outcome?",
-        "2.3": "Were these deviations balanced between groups?",
-        "2.4": "Were participants sufficiently adherent to the assigned intervention throughout the trial?",
-        "2.5": "Was an appropriate analysis used to estimate the effect of adhering to the intervention?",
-        "2.6": "If the analysis was inappropriate, is the estimate likely to be biased?",
+        "2.1": "Were participants aware of their assigned intervention during the trial?",
+        "2.2": "Were carers/people delivering the interventions aware of participants’ assigned intervention?",
+        "2.3": "(If Y/PY/NI to 2.1 or 2.2) Were important non-protocol interventions balanced across intervention groups?",
+        "2.4": "(If applicable) Were there failures in implementing the intervention that could have affected the outcome?",
+        "2.5": "(If applicable) Was there non-adherence to the assigned intervention regimen that could have affected participants’ outcomes?",
+        "2.6": "(If N/PN/NI to 2.3, or Y/PY/NI to 2.4 or 2.5) Was an appropriate analysis used to estimate the effect of adhering to intervention?",
     }
 
     # --------------------------------------------
@@ -45,11 +53,11 @@ class Domain2Adhering(BaseDomain):
             None   → all questions answered
         """
 
-        # Q2.1 – Deviations due to trial context
+        # Q2.1 – Participant awareness
         if state.get("2.1") is None:
             return "2.1"
 
-        # Q2.2 – Were deviations likely to affect outcome?
+        # Q2.2 – Carer/deliverer awareness
         if state.get("2.2") is None:
             return "2.2"
 
@@ -69,7 +77,7 @@ class Domain2Adhering(BaseDomain):
 
         # Q2.6 – Analysis appropriateness, conditional per template
         needs_analysis = (
-            (state.get("2.3") in (NO | NO_INFO)) or
+            (aware and state.get("2.3") in (NO | NO_INFO)) or
             (state["2.4"] in (YES | NO_INFO)) or
             (state["2.5"] in (YES | NO_INFO))
         )
@@ -94,47 +102,63 @@ class Domain2Adhering(BaseDomain):
 
         path = []
 
+        aware = (q2_1 in (YES | NO_INFO)) or (q2_2 in (YES | NO_INFO))
+        non_protocol_unbalanced = aware and q2_3 in NO
+        non_protocol_unclear = aware and ((q2_3 in NO_INFO) or (q2_3 is None))
+        implementation_failures = q2_4 in YES
+        implementation_unclear = q2_4 in NO_INFO
+        non_adherence_present = q2_5 in YES
+        non_adherence_unclear = q2_5 in NO_INFO
+
+        analysis_needed = (
+            non_protocol_unbalanced
+            or non_protocol_unclear
+            or implementation_failures
+            or implementation_unclear
+            or non_adherence_present
+            or non_adherence_unclear
+        )
+
+        reasons = []
+        if non_protocol_unbalanced:
+            reasons.append("Important non-protocol interventions were not balanced.")
+        if non_protocol_unclear:
+            reasons.append("Balance of important non-protocol interventions is unclear.")
+        if implementation_failures:
+            reasons.append("Failures in implementing the intervention could have affected outcomes.")
+        if implementation_unclear:
+            reasons.append("Information on intervention implementation is insufficient.")
+        if non_adherence_present:
+            reasons.append("Non-adherence to the intervention regimen could affect outcomes.")
+        if non_adherence_unclear:
+            reasons.append("Adherence information is insufficient to rule out bias.")
+
         # ------------------------------------------------------
         # HIGH RISK RULES
         # ------------------------------------------------------
-
-        # Deviations occurred AND were likely to affect the outcome
-        if q2_1 in YES and q2_2 in YES:
-            path.append("Deviations arose due to trial context and were likely to affect outcomes → High risk.")
+        if analysis_needed and q2_6 in NO:
+            path.append("Potential biases identified ({}) without an appropriate analysis → High risk.".format(
+                "; ".join(reasons) if reasons else "analysis requested"
+            ))
             return Domain2AdherenceResult(
                 "High",
-                "Outcome likely biased because deviations from intended intervention influenced results.",
-                path,
-            )
-
-        # Deviations not balanced between groups
-        if q2_1 in YES and q2_3 in NO:
-            path.append("Deviations occurred and were not balanced between intervention groups → High risk.")
-            return Domain2AdherenceResult(
-                "High",
-                "Bias likely introduced by imbalance in deviations across groups.",
-                path,
-            )
-
-        # Inappropriate analysis AND likely biased
-        if q2_5 in NO and q2_6 in YES:
-            path.append("Inappropriate adherence-effect analysis and result likely biased → High risk.")
-            return Domain2AdherenceResult(
-                "High",
-                "The adherence-effect estimate is likely biased due to inappropriate analysis.",
+                "The adherence-effect estimate is likely biased because necessary analytical adjustments were not used.",
                 path,
             )
 
         # ------------------------------------------------------
         # LOW RISK RULES
         # ------------------------------------------------------
+        non_protocol_balanced_or_not_applicable = (not aware) or (q2_3 in YES) or (q2_3 in NOT_APPLICABLE)
+        implementation_ok = q2_4 in (NO | NOT_APPLICABLE) or q2_4 is None
+        adherence_ok = q2_5 in (NO | NOT_APPLICABLE) or q2_5 is None
+        analysis_ok = (not analysis_needed) or (q2_6 in YES)
 
-        # No concerning deviations + adherence good + appropriate analysis
-        if (q2_1 in (NO | NO_INFO)) and (q2_4 in YES | NO_INFO) and (q2_5 in YES | NO_INFO):
-            path.append("No concerning deviations + adequate adherence + appropriate analysis → Low risk.")
+        if non_protocol_balanced_or_not_applicable and implementation_ok and adherence_ok and analysis_ok:
+            path.append("No concerning imbalances or adherence issues and analysis appropriate when needed → Low risk.")
             return Domain2AdherenceResult(
                 "Low",
-                "Bias unlikely since deviations did not meaningfully distort the adherence-based effect estimate.",
+                "Bias due to deviations from intended intervention is unlikely under the adherence effect.",
                 path,
             )
 
@@ -142,11 +166,11 @@ class Domain2Adhering(BaseDomain):
         # SOME CONCERNS
         # ------------------------------------------------------
         path.append(
-            "No high-risk criteria met, but insufficient information to confirm low risk → Some concerns."
+            "Potential deviations or unclear information remain, or the appropriateness of analysis is uncertain → Some concerns."
         )
         return Domain2AdherenceResult(
             "Some concerns",
-            "Some uncertainty remains about deviations, adherence levels, or the appropriateness of the analysis.",
+            "Some uncertainty remains about non-protocol interventions, implementation fidelity, adherence, or the analytical approach.",
             path,
         )
 

@@ -3,47 +3,33 @@ Domain 2 – Question 2.3 (Effect of Adhering to Intervention)
 
 Prompt:
 You are evaluating Risk of Bias Domain 2 for the “Effect of Adhering to Intervention.”
-This is Question 2.3:
-“Were important deviations from intended intervention balanced across groups?”
+This is Question 2.3 (asked only if participants or carers were/likely were aware):
+“Were important non-protocol interventions balanced across intervention groups?”
 
 Read the provided document.
 
 Your tasks:
 
-1. Determine whether deviations identified in Questions 2.1 and 2.2 occurred
-   similarly across intervention groups or were imbalanced.
-
-2. Deviations are considered unbalanced if:
-     - they occur more frequently in one intervention arm,
-     - the type or severity differs across groups,
-     - reasons for non-adherence differ meaningfully between groups,
-     - one group experiences more co-interventions, supplemental treatments,
-       or protocol departures than the other.
-
-3. Deviations are considered balanced if:
-     - both groups exhibit similar adherence patterns,
-     - deviations appear randomly distributed,
-     - co-interventions and protocol departures are comparable.
-
-4. If no deviations occurred in either group, answer:
-     N = No (no unbalanced deviations)
-
-5. Return one of the following:
-   Y  = Yes (deviations were unbalanced)
+1. Assess whether additional interventions or exposures outside the trial protocol were similar across groups.
+2. Important non-protocol interventions are those that:
+   - are inconsistent with the trial protocol,
+   - participants might receive after starting their assigned intervention, and
+   - are prognostic for the outcome.
+3. If such interventions were unbalanced or if balance is unclear, bias risk increases.
+4. Return one of the following:
+   NA = Not Applicable (question not relevant because earlier conditions not met)
+   Y  = Yes (important non-protocol interventions were balanced)
    PY = Probably Yes
-   NI = No Information
    PN = Probably No
-   N  = No (deviations were balanced or none occurred)
-
-6. Provide a short justification explaining why the chosen answer is appropriate.
-
-7. Quote exact sentences or phrases from the document that support your conclusion.
-
-8. If no relevant information about group-wise deviations is provided, answer NI.
+   N  = No (not balanced)
+   NI = No Information
+5. Provide a short justification explaining why the chosen answer is appropriate.
+6. Quote exact sentences or phrases from the document that support your conclusion.
+7. If information on non-protocol interventions is absent, answer NI.
 
 Output format:
 
-Answer: <Y | PY | NI | PN | N>
+Answer: <NA | Y | PY | PN | N | NI>
 Justification: <2–4 sentences explaining reasoning>
 Quoted Evidence:
 "<exact text copied from the document>"

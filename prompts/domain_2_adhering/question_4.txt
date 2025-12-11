@@ -3,48 +3,30 @@ Domain 2 – Question 2.4 (Effect of Adhering to Intervention)
 
 Prompt:
 You are evaluating Risk of Bias Domain 2 for the “Effect of Adhering to Intervention.”
-This is Question 2.4:
-“Were these deviations from intended intervention likely to have affected the outcome?”
+This is Question 2.4 (asked only if specified in preliminary considerations):
+“Were there failures in implementing the intervention that could have affected the outcome?”
 
 Read the provided document.
 
 Your tasks:
 
-1. Examine the deviations identified in Questions 2.1–2.3 and assess whether they
-   could plausibly influence the study outcome under a per-protocol (adherence-focused) interpretation.
-
-2. Deviations are likely to affect the outcome if they:
-     - alter the intervention actually received,
-     - significantly change dose, duration, or fidelity of intervention delivery,
-     - introduce meaningful differences in adherence levels between groups,
-     - introduce clinically relevant co-interventions,
-     - are linked to mechanisms influencing outcomes.
-
-3. Deviations are unlikely to affect outcomes if:
-     - they are minor,
-     - they occur similarly in all groups,
-     - they are unrelated to the causal pathway of the outcome,
-     - the study provides evidence they had negligible influence.
-
-4. If no deviations were reported at all, answer:
-     N = No
-
-5. Return one of the following:
-   Y  = Yes (deviations likely influenced outcomes)
+1. Identify whether the intervention was delivered as intended for most participants.
+2. Count as failures issues such as incorrect dosing, missed delivery steps, or other implementation problems that could influence outcomes.
+3. If implementation was successful for most participants, answer N or PN.
+4. Return one of the following:
+   NA = Not Applicable (implementation failures not being assessed)
+   Y  = Yes (failures occurred that could affect the outcome)
    PY = Probably Yes
-   NI = No Information
    PN = Probably No
-   N  = No (unlikely to influence outcomes)
-
-6. Provide a short justification explaining why the chosen answer is appropriate.
-
-7. Quote exact sentences or phrases from the document that support your conclusion.
-
-8. If the impact of deviations on outcomes is not addressed, answer NI.
+   N  = No (implementation largely successful)
+   NI = No Information
+5. Provide a short justification explaining why the chosen answer is appropriate.
+6. Quote exact sentences or phrases from the document that support your conclusion.
+7. If the document does not describe implementation success or failures, answer NI.
 
 Output format:
 
-Answer: <Y | PY | NI | PN | N>
+Answer: <NA | Y | PY | PN | N | NI>
 Justification: <2–4 sentences explaining reasoning>
 Quoted Evidence:
 "<exact text copied from the document>"

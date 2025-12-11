@@ -4,45 +4,28 @@ Domain 2 – Question 2.2 (Effect of Adhering to Intervention)
 Prompt:
 You are evaluating Risk of Bias Domain 2 for the “Effect of Adhering to Intervention.”
 This is Question 2.2:
-“Were there deviations from intended intervention that were not caused by the trial context?”
+“Were carers and people delivering the interventions aware of participants' assigned intervention during the trial?”
 
 Read the provided document.
 
 Your tasks:
 
-1. Identify deviations from the intended intervention that occurred for reasons 
-   unrelated to the experimental context.
-   These may include:
-     - participants failing to adhere due to personal reasons,
-     - missed doses, dropped appointments, partial compliance,
-     - treatment discontinuation due to side effects,
-     - changes in behavior or treatment that occur normally in real-world settings.
-
-2. These deviations *are not* considered caused by the trial context if:
-     - they reflect natural variability in adherence,
-     - they would have occurred similarly outside clinical research,
-     - they are unrelated to participant or clinician awareness of assignment,
-     - they stem from routine clinical decision-making.
-
-3. Distinguish these from deviations caused by trial procedures (Question 2.1),
-   which you should NOT count here.
-
+1. Decide whether carers/people delivering the intervention knew (or likely knew) participant allocations.
+2. Treat them as aware if blinding was absent or ineffective, side effects/toxicities signaled allocation, or allocation concealment was not maintained.
+3. Treat them as unaware when masking procedures for deliverers were used and appear effective.
 4. Return one of the following:
-   Y  = Yes (non–trial-context deviations occurred)
+   Y  = Yes (carers/deliverers were aware)
    PY = Probably Yes
-   NI = No Information
    PN = Probably No
-   N  = No (no evidence of such deviations)
-
+   N  = No (carers/deliverers were not aware)
+   NI = No Information
 5. Provide a short justification explaining why the chosen answer is appropriate.
-
 6. Quote exact sentences or phrases from the document that support your conclusion.
-
-7. If no relevant information about these deviations is available in the document, answer NI.
+7. If no information about awareness of carers/deliverers is provided, answer NI.
 
 Output format:
 
-Answer: <Y | PY | NI | PN | N>
+Answer: <Y | PY | PN | N | NI>
 Justification: <2–4 sentences explaining reasoning>
 Quoted Evidence:
 "<exact text copied from the document>"

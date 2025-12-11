@@ -11,11 +11,13 @@ class Response(Enum):
     NI = "NI"  # No Information
     PN = "PN"  # Probably No
     N = "N"   # No
+    NA = "NA"  # Not Applicable
 
 
 YES = {Response.Y, Response.PY}
 NO = {Response.N, Response.PN}
 NO_INFO = {Response.NI}
+NOT_APPLICABLE = {Response.NA}
 
 
 class DomainResult:

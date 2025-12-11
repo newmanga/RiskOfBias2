@@ -3,44 +3,38 @@ Domain 2 – Question 2.6 (Effect of Adhering to Intervention)
 
 Prompt:
 You are evaluating Risk of Bias Domain 2 for the “Effect of Adhering to Intervention.”
-This is Question 2.6:
-“Was there a substantial risk of bias due to deviations from the intended interventions?”
+This is Question 2.6 (ask if N/PN/NI to 2.3, or Y/PY/NI to 2.4 or 2.5):
+“Was an appropriate analysis used to estimate the effect of adhering to intervention?”
 
 Read the provided document.
 
+Elaboration (full guidance):
+- Both “naïve per-protocol” analyses (excluding participants who did not receive their allocated intervention) and “as-treated” analyses (comparing participants according to the intervention they actually received) are usually inappropriate for estimating the per-protocol effect.
+- Appropriate methods can derive an unbiased estimate from randomized trials, e.g.:
+  • Instrumental variable analyses to estimate the effect of receiving the assigned intervention in trials with a single baseline intervention and all-or-nothing adherence versus standard care.
+  • Inverse probability weighting to adjust for censoring of participants who cease adherence in trials of sustained treatment strategies.
+- These methods rely on strong assumptions that should be appropriate and justified if you answer Y/PY.
+- A paper might report such methods without detailing deviations, but appropriateness is hard to judge without that information.
+- If an important non-protocol intervention was given to all participants in one group, adjustments cannot overcome this.
+- Examples of analysis strategies that are NOT appropriate to estimate the adherence effect include: (i) Intention-to-treat (ITT) analysis; (ii) Per-protocol analysis; (iii) As-treated analysis; (iv) Analysis by treatment received.
+
 Your tasks:
 
-1. Review the evidence from Questions 2.1–2.5 to determine whether:
-     - deviations from intended intervention occurred,
-     - deviations arose from the trial context or routine practice,
-     - deviations were unbalanced between groups,
-     - deviations were likely to influence the outcome,
-     - and whether the analysis appropriately estimated the adherence effect.
-
-2. Assess the overall risk of bias based on the pattern of findings:
-     - Consider **High risk** if important deviations occurred,
-       were unbalanced, likely affected outcomes,
-       and/or the analysis method was inappropriate.
-     - Consider **Some concerns** if information is incomplete or uncertainties remain.
-     - Consider **Low risk** if deviations were absent, balanced, unlikely to affect the outcome,
-       and an appropriate adherence-effect analysis was used.
-
-3. Return one of the following:
-   Y  = Yes (there is substantial risk of bias)
+1. Decide whether the analysis appropriately estimates the per-protocol (adherence-focused) effect given the potential deviations/non-adherence.
+2. Return one of the following:
+   NA = Not Applicable (analysis not needed because prerequisites for this question were not met)
+   Y  = Yes (analysis appropriate)
    PY = Probably Yes
-   NI = No Information
    PN = Probably No
-   N  = No (no substantial risk)
-
-4. Provide a short justification explaining why the chosen answer is appropriate,
-   referencing earlier answers when relevant.
-
-5. Quote exact sentences or phrases from the document that support your conclusion.
-   If no relevant information is reported, answer NI and state that data is insufficient.
+   N  = No (analysis inappropriate)
+   NI = No Information
+3. Provide a short justification explaining why the chosen answer is appropriate.
+4. Quote exact sentences or phrases from the document that support your conclusion.
+5. If the analysis approach is not described or cannot be judged, answer NI.
 
 Output format:
 
-Answer: <Y | PY | NI | PN | N>
+Answer: <NA | Y | PY | PN | N | NI>
 Justification: <2–4 sentences explaining reasoning>
 Quoted Evidence:
 "<exact text copied from the document>"
